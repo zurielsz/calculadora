@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./assets/css/calculadora.css">
+</head>
+<body>
+  <h1>Calculadora curso Javascript</h1>
+  <section class="calculadora">
+    <input type="text" name="pantalla" id="pantalla" placeholder="0.0" readonly>
+    <br>
+    <div class="operaciones">
+    </div>
+    <div class="distribucion">
+      <input type="button" value="1" onclick="agregar('1')" id="uno">
+      <input type="button" value="2" onclick="agregar('2')" id="dos">
+      <input type="button" value="3" onclick="agregar('3')" id="tres">
+      <input type="button" value="4" onclick="agregar('4')" id="cuatro">
+      <input type="button" value="5" onclick="agregar('5')" id="cinco">
+      <input type="button" value="6" onclick="agregar('6')" id="seis">
+      <input type="button" value="7" onclick="agregar('7')" id="siete">
+      <input type="button" value="8" onclick="agregar('8')" id="ocho">
+      <input type="button" value="9" onclick="agregar('9')" id="nueve">
+      <input type="button" value="0" onclick="agregar('0')" id="cero">
+      <input type="button" value="+" onclick="agregar('+')" id="suma">
+      <input type="button" value="-" onclick="agregar('-')" id="menos">
+      <input type="button" value="*" onclick="agregar('*')" id="por">
+      <input type="button" value="/" onclick="agregar('/')" id="entre">
+      <input type="button" value="." onclick="agregar('.')" id="punto">
+      <input type="button" value="=" onclick="calcular()" id="igual">
+      <input type="button" value="C" onclick="borrar()" id="borrar">
+    </div>
+    <br>
+    <br>
+  </section>
+  <script src="./assets/js/calculadora.js"></script>
+</body>
+</html>

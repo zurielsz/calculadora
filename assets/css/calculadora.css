@@ -1,0 +1,189 @@
+:root {
+--main:            #E0E5EC;
+--text:            rgba(22, 22, 22, 0.784);
+--shadow-dark:     #0000001a;
+--shadow-light:    #ffffffe2;
+--shadow-semilight:#dbdbdbe2;
+
+}
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  font-size:62.5%
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--main);
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 30px;
+  padding: 2rem;
+  color: var(--main);
+  text-shadow: 2px 2px 1px var(--shadow-dark),
+               1px 1px 2px var(--shadow-dark),
+              -1px -1px 1px var(--shadow-light),
+              -2px -2px 2px var(--shadow-semilight);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.calculadora {
+  width: 380px;
+  margin: 0 auto;
+  background-color: var(--main);
+  padding: 2rem;
+  border-radius: 20px 5px 20px 5px;
+  /* box-shadow: 0 2px 5px var(--shadow-dark), -1px -1px 5px var(--shadow-light); */
+  box-shadow: 2px 2px 5px var(--shadow-dark),
+              3px 3px 7px var(--shadow-dark),
+              0px 0px 10px var(--shadow-dark),
+              -1px -1px 5px var(--shadow-light),
+              -2px -2px 10px var(--shadow-light);
+}
+
+input[type="button"] {
+  width: 55px;
+  height: 55px;
+  font-size: 16px;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px var(--shadow-dark),
+              3px 3px 7px var(--shadow-dark),
+              -1px -1px 5px var(--shadow-light),
+              -2px -2px 7px var(--shadow-light);
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+input[type="button"]:hover {
+  background-color: var(--shadow-light);
+}
+
+input[type="button"]:last-child {
+  margin-right: 0;
+}
+.distribucion
+{
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+                      "borrar menos por entre"
+                      "siete ocho nueve suma"
+                      "cuatro cinco seis suma"
+                      "uno dos tres suma"
+                      "cero punto igual igual";
+  gap: 2rem;
+}
+
+#uno 
+{
+  grid-area: uno;
+}
+#dos
+{
+  grid-area: dos;
+}
+#tres 
+{
+  grid-area: tres;
+}
+#borrar 
+{
+  grid-area: borrar;
+  color: red;
+}
+#menos 
+{
+  grid-area: menos;
+}
+#por 
+{
+  grid-area: por;
+}
+#entre 
+{
+  grid-area: entre;
+}
+#siete 
+{
+  grid-area: siete;
+}
+#ocho 
+{
+  grid-area: ocho;
+}
+#nueve 
+{
+  grid-area: nueve;
+}
+#suma 
+{
+  grid-area: suma;
+  height: 100%;
+}
+#cuatro 
+{
+  grid-area: cuatro;
+}
+#cinco 
+{
+  grid-area: cinco;
+}
+#seis 
+{
+  grid-area: seis;
+}
+#cero 
+{
+  grid-area: cero;
+}
+#igual 
+{
+  grid-area: igual;
+  width: 100%;
+  height: 100%;
+}
+#seis 
+{
+  grid-area: seis;
+}
+#menos, #por, #entre, #suma, #igual
+{
+  color: rgb(125, 56, 228);
+}
+
+
+#pantalla {
+  width: 100%;
+  padding: 10px;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: var(--text);
+  margin-bottom: 10px;
+  text-align: right;
+  border: none;
+  background-color: var(--main);
+}
+#pantalla::placeholder
+{
+  color: var(--text);
+}
