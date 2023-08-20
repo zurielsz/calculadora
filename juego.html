@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/juego.css">
+    <title>Juego JS</title>
+</head>
+
+<body>
+    <div class="Container">
+        <h1>Adivina el número</h1>
+        <p>Introduce un número entre 1 y 100:</p>
+        <input type="number" id="numeroEntrada">
+        <button onclick="ingresar()" id="botonComprueba">Comprobar</button>
+        <p id="mensaje">¡A Jugar!</p>
+        <div class="containerIntentos">
+            <p>Intentos</p><span id="intento">0</span>
+        </div>
+        <p id="pro"></p>
+    </div>
+
+    <script src="./assets/js/juego.js"></script>
+</body>
+
+</html>
